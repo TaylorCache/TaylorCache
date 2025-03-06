@@ -10,6 +10,12 @@
 
 .video-group .item {
   width: 30%;
+  text-align: center;
+}
+
+.video-group h3 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
 }
 
 video {
@@ -19,9 +25,4 @@ video {
 
 .hidden {
   display: none;
-}
-
-.buttons {
-  margin-top: 20px;
-  text-align: center;
 }
