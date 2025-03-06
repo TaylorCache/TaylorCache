@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function autoSwitch() {
         setInterval(() => {
             carousels[0].next(); // 轮播到下一组
-        }, 5000); // 每 5 秒自动切换
+        }, 2000); // 每 5 秒自动切换
     }
 
     autoSwitch();
