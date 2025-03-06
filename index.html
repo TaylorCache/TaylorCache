@@ -143,37 +143,52 @@ Our code is provided in the supplementary materials and will be made publicly av
 
 
 
-<!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Video Gallery</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+
+      <!-- 第一组 -->
+      <div class="video-group" id="video-group-1">
+        <div class="item"><video src="static/videos/videosample1/original.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample1/11steps.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample1/fora.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample1/toca.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample1/duca.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample1/taylor.mp4" controls muted loop></video></div>
+      </div>
+
+      <!-- 第二组 -->
+      <div class="video-group hidden" id="video-group-2">
+        <div class="item"><video src="static/videos/videosample2/original.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample2/11steps.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample2/fora.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample2/toca.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample2/duca.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample2/taylor.mp4" controls muted loop></video></div>
+      </div>
+
+      <!-- 第三组 -->
+      <div class="video-group hidden" id="video-group-3">
+        <div class="item"><video src="static/videos/videosample3/original.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample3/11steps.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample3/fora.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample3/toca.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample3/duca.mp4" controls muted loop></video></div>
+        <div class="item"><video src="static/videos/videosample3/taylor.mp4" controls muted loop></video></div>
+      </div>
+
+      <!-- 你可以继续添加更多组 -->
+
+      <!-- 切换按钮 -->
+      <div class="buttons">
+        <button id="prev-video" class="button is-secondary">上一组</button>
+        <button id="next-video" class="button is-primary">下一组</button>
       </div>
     </div>
   </div>
 </section>
+
 <!-- End video carousel -->
 
 
