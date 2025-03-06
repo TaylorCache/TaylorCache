@@ -52,14 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
+            <h1 class="title is-1 publication-title">Features of Diffusion Models are Predictable: Accelerating Diffusion Transformers with Taylor Feature Caching</h1>
 
         </div>
       </div>
@@ -93,7 +86,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+Diffusion Transformers (DiT) have revolutionized high-fidelity image and video synthesis, yet their computational demands remain prohibitive for real-time applications.
+Recently, based on the highly similar features in the adjacent timesteps,
+feature caching has been proposed to accelerate diffusion models by storing the features in the previous timesteps and then reusing them in the following timesteps. However, at timesteps with significant intervals, the feature similarity in diffusion models decreases substantially, leading to a pronounced increase in errors introduced by feature caching, which limits the application of feature caching in high-acceleration ratios. To solve this problem, we propose TaylorCache, which firstly show that features of diffusion models in the future timesteps can be predicted based on their values in the previous timesteps.
+Leveraging the fact that features change slowly and continuously over timesteps, TaylorCache employs a differential method to approximate the higher-order derivatives of features and utilizes the Taylor series expansion to predict features in the future timesteps, effectively enabling accurate forecasting of future features. Extensive experiments on SOTA diffusion models including FLUX, HunyuanVideo, and DiT have demonstrated the superiority of TaylorCache in both image and video synthesis. For instance, it achieves an almost lossless acceleration of 4.99× on FLUX and 5.00× on HunyuanVideo without additional training. On DiT, it reduces the drop in generation quality by 36× compared with the previous SOTA.
+Our code is provided in the supplementary materials and will be made publicly available on GitHub.
           </p>
         </div>
       </div>
